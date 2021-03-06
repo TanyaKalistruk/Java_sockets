@@ -18,7 +18,7 @@ public class ServerTCP extends Thread {
         BufferedReader reader;
         ArrayList<String> usersList = new ArrayList<>();
         try {
-            reader = new BufferedReader(new FileReader("C:\\Users\\Asus\\Desktop\\labs\\java\\src\\users.txt"));
+            reader = new BufferedReader(new FileReader("src" + File.separator+ "users.txt"));
             String line = reader.readLine();
             while (line != null) {
                 usersList.add(line);
